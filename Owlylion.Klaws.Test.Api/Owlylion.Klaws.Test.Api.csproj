@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Owlylion.Klaws.AspNetCore\Owlylion.Klaws.AspNetCore.csproj" />
+    <ProjectReference Include="..\Owlylion.Klaws.Test.DataAccessLayer.EfCore\Owlylion.Klaws.Test.DataAccessLayer.EfCore.csproj" />
+    <ProjectReference Include="..\Owlylion.Klaws.Test.Services\Owlylion.Klaws.Test.Services.csproj" />
+  </ItemGroup>
+
+</Project>
