@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Owlylion.Klaws.Core;
 
 namespace Owlylion.Klaws.DataAccessLayer.Repositories
 {
     public interface IKlawsRepository<TModel> 
-        where TModel : class, new()
+        where TModel : class, IKeyedObject, new()
     {
         /// <summary>
         /// 
@@ -23,14 +20,21 @@ namespace Owlylion.Klaws.DataAccessLayer.Repositories
         /// <param name="key"></param>
         /// <returns></returns>
         Task<TModel> Get(object key);
-        
+
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="key"></param>
-        /// <param name="patch"></param>
+        /// <param name="page"></param>
+        /// <param name="perPage"></param>
         /// <returns></returns>
-        Task Update(object key, Patch<TModel> patch);
+        Task<ICollection<TModel>> List(int page, int perPage);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        Task Update(TModel model);
 
         /// <summary>
         /// 
@@ -38,5 +42,11 @@ namespace Owlylion.Klaws.DataAccessLayer.Repositories
         /// <param name="key"></param>
         /// <returns></returns>
         Task Remove(object key);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        Task Save();
     }
 }

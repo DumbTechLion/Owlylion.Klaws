@@ -5,17 +5,17 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Startup", "Owlylion.Klaws.Startup\Owlylion.Klaws.Startup.csproj", "{0DB6F6B0-71E7-44E7-82E8-2291223DF388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.Core", "Owlylion.Klaws.Core\Owlylion.Klaws.Core.csproj", "{A0F74248-03F7-47B2-9695-5BA95BB2F9D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Core", "Owlylion.Klaws.Core\Owlylion.Klaws.Core.csproj", "{A0F74248-03F7-47B2-9695-5BA95BB2F9D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.Web", "Owlylion.Klaws.Web\Owlylion.Klaws.Web.csproj", "{4B2F27EE-B8C3-4FB0-9872-5F465E44FE0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.AspNetCore", "Owlylion.Klaws.AspNetCore\Owlylion.Klaws.AspNetCore.csproj", "{4B2F27EE-B8C3-4FB0-9872-5F465E44FE0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.Services", "Owlylion.Klaws.Services\Owlylion.Klaws.Services.csproj", "{C8FD770C-CD78-4E50-A719-66BCD574A2BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Services", "Owlylion.Klaws.Services\Owlylion.Klaws.Services.csproj", "{C8FD770C-CD78-4E50-A719-66BCD574A2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.DataAccessLayer", "Owlylion.Klaws.DataAccessLayer\Owlylion.Klaws.DataAccessLayer.csproj", "{B319EBD2-F155-40C7-A246-3E442EE8871F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.DataAccessLayer", "Owlylion.Klaws.DataAccessLayer\Owlylion.Klaws.DataAccessLayer.csproj", "{B319EBD2-F155-40C7-A246-3E442EE8871F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Core", "01-Core", "{29BD9C5F-2D1C-48D2-985E-E56100DD5541}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-", "02-", "{46E7B690-CC5D-4714-B857-76003F38913F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Base Module", "02-Base Module", "{46E7B690-CC5D-4714-B857-76003F38913F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "98-Tests", "98-Tests", "{AC560F84-622D-411F-BD1C-48FABEFE678D}"
 EndProject
@@ -23,11 +23,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99-Exec", "99-Exec", "{92C9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Solution Items", "00-Solution Items", "{16A7CA5A-966C-42E5-8CF6-D74B2722252C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.Api", "Owlylion.Klaws.Api\Owlylion.Klaws.Api.csproj", "{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12-DataAccessLayer Implementation", "12-DataAccessLayer Implementation", "{05D00EEA-445C-4591-A641-A07393ED3335}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Implementation", "03-Implementation", "{05D00EEA-445C-4591-A641-A07393ED3335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.DataAccessLayer.EFCore", "Owlylion.Klaws.DataAccessLayer.EFCore\Owlylion.Klaws.DataAccessLayer.EFCore.csproj", "{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owlylion.Klaws.DataAccessLayer.EFCore", "Owlylion.Klaws.DataAccessLayer.EFCore\Owlylion.Klaws.DataAccessLayer.EFCore.csproj", "{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90-Test Architecture", "90-Test Architecture", "{D85DC4F7-BE74-4BED-9B3A-230594BBD702}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Test.Services", "Owlylion.Klaws.Test.Services\Owlylion.Klaws.Test.Services.csproj", "{70F448BF-96F2-48E1-B105-9E8D1ED02D4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Test.DataAccessLayer", "Owlylion.Klaws.Test.DataAccessLayer\Owlylion.Klaws.Test.DataAccessLayer.csproj", "{273AE325-5FDA-42F7-8564-6F2AEAF21349}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owlylion.Klaws.Test.DataAccessLayer.EfCore", "Owlylion.Klaws.Test.DataAccessLayer.EfCore\Owlylion.Klaws.Test.DataAccessLayer.EfCore.csproj", "{612E07F2-D671-4DE3-8ACB-CA9AE140A392}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +61,22 @@ Global
 		{B319EBD2-F155-40C7-A246-3E442EE8871F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B319EBD2-F155-40C7-A246-3E442EE8871F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B319EBD2-F155-40C7-A246-3E442EE8871F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61CF2B9-C3CC-429F-8F68-E8504B6567EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F448BF-96F2-48E1-B105-9E8D1ED02D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F448BF-96F2-48E1-B105-9E8D1ED02D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F448BF-96F2-48E1-B105-9E8D1ED02D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F448BF-96F2-48E1-B105-9E8D1ED02D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273AE325-5FDA-42F7-8564-6F2AEAF21349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273AE325-5FDA-42F7-8564-6F2AEAF21349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273AE325-5FDA-42F7-8564-6F2AEAF21349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273AE325-5FDA-42F7-8564-6F2AEAF21349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{612E07F2-D671-4DE3-8ACB-CA9AE140A392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612E07F2-D671-4DE3-8ACB-CA9AE140A392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612E07F2-D671-4DE3-8ACB-CA9AE140A392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612E07F2-D671-4DE3-8ACB-CA9AE140A392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,8 +87,10 @@ Global
 		{4B2F27EE-B8C3-4FB0-9872-5F465E44FE0A} = {46E7B690-CC5D-4714-B857-76003F38913F}
 		{C8FD770C-CD78-4E50-A719-66BCD574A2BF} = {46E7B690-CC5D-4714-B857-76003F38913F}
 		{B319EBD2-F155-40C7-A246-3E442EE8871F} = {46E7B690-CC5D-4714-B857-76003F38913F}
-		{1E3A903C-6CD2-4F15-AC9B-1ABEFDC90FE0} = {92C96C41-842C-4963-99D2-AEDF09D4642C}
 		{E61CF2B9-C3CC-429F-8F68-E8504B6567EB} = {05D00EEA-445C-4591-A641-A07393ED3335}
+		{70F448BF-96F2-48E1-B105-9E8D1ED02D4E} = {D85DC4F7-BE74-4BED-9B3A-230594BBD702}
+		{273AE325-5FDA-42F7-8564-6F2AEAF21349} = {D85DC4F7-BE74-4BED-9B3A-230594BBD702}
+		{612E07F2-D671-4DE3-8ACB-CA9AE140A392} = {D85DC4F7-BE74-4BED-9B3A-230594BBD702}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42FF8E70-1C60-4371-BED6-DB956FAEEC07}
